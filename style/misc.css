@@ -1,0 +1,29 @@
+/* misc page */
+
+.remote .img{
+    background-image: url("https://i.ibb.co/FXQmM8t/image.png");
+    filter: blur(2px) contrast(70%) brightness(70%) saturate(2);
+    transform: scale(1.2);
+  }
+  .vr .img{
+    background-image: url("https://i.ibb.co/WzxKx3S/image.png");
+    transform: scale(1.1) ;
+    filter: blur(2px) contrast(60%) brightness(80%) saturate(2);
+  }
+  .card-footer .download-btn{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    opacity: 0.5;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 20px #fff, 0 0 30px #62ff4d, 0 0 40px #0fff6b, 0 0 50px #00ff40, 0 0 60px #57ffa3, 0 0 70px #4dff65, 0 0 80px #4dff7a;
+  }
+  .download-text{
+    color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 30%;
+  }

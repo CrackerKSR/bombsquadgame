@@ -1,0 +1,27 @@
+{
+    "uid": "aNtCu5oCbRPVsgK8OJzJMed9sDd2",
+    "displayName": "Kishor Jena",
+    "photoURL": "https://lh3.googleusercontent.com/a-/AAuE7mDO9byeq6bHrgN_X3m8qGsiad4fY83YbuUli35lYoc",
+    "email": "ksr.jena@gmail.com",
+    "emailVerified": true,
+    "isAnonymous": false,
+    "providerData": [
+    {
+        "uid": "105301538676717079107",
+        "displayName": null,
+        "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GixC77ffHqNrD8WE71_4jmtFRy_leQVvydA-cM1Fak=s96-c",
+        "email": "ksr.jena@gmail.com",
+        "providerId": "google.com"
+    }],
+    "apiKey": "AIzaSyAxzDpJSMvVjR7rxd7SrrlvNhPSQW28pTo",
+    "appName": "[DEFAULT]",
+    "authDomain": "xampp-ksr.firebaseapp.com",
+    "stsTokenManager":
+    {
+        "apiKey": "AIzaSyAxzDpJSMvVjR7rxd7SrrlvNhPSQW28pTo",
+        "refreshToken": "AEu4IL2fH1IqRUGimvr1jrKKB8g9_uSYU_XCJCwQ8mgTHOYTy_m7N9ywHGC4nTQrRsoUovkYB9k7ud8PRlD-_6S1_JPibbztlgzV-E5clDxUe47WLoFKQL4Vt5oVXiWsceBWxK9iBHhIorxtiYi2QKkeNwIET9W3h4m6n5frCwwQlnn0CdFmFzDM2YKdFgTxjYEpyy-tI6xPUDSiCel-NAa_mAl9YiV1gufZG7jy12zTFAbhugO04osUJhUMH-Z5sZeRGgBRwRLLm4gl3Q1r58KNC2TmMeD8YAW0VX7_MVxEXd0i2QceWFYIhZ7lN5mHB2MFjSWT5gHFzA09GewLOdyMeURTmewvvetEZyP4a-CyZ2KcbNTg9j1TEb1j5V9woGjOvq-O2arG",
+        "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjhjZjBjNjQyZDQwOWRlODJlY2M5MjI4ZTRiZDc5OTkzOTZiNTY3NDAiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiS2lzaG9yIEplbmEiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FBdUU3bURPOWJ5ZXE2YkhyZ05fWDNtOHFHc2lhZDRmWTgzWWJ1VWxpMzVsWW9jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3hhbXBwLWtzciIsImF1ZCI6InhhbXBwLWtzciIsImF1dGhfdGltZSI6MTU4MzQ4ODEyOSwidXNlcl9pZCI6ImFOdEN1NW9DYlJQVnNnSzhPSnpKTWVkOXNEZDIiLCJzdWIiOiJhTnRDdTVvQ2JSUFZzZ0s4T0p6Sk1lZDlzRGQyIiwiaWF0IjoxNTgzNDg4MTI5LCJleHAiOjE1ODM0OTE3MjksImVtYWlsIjoia3NyLmplbmFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDUzMDE1Mzg2NzY3MTcwNzkxMDciXSwiZW1haWwiOlsia3NyLmplbmFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.EGtAafJmHTRgRan4GwnsPayFt9bACDTOnjQukQ0Ow8GNk-0itXOGsNGI_kbvOz7gmUnHD2n5kY2mI3jAmqJSqgCNR7oedL8CKEkhdXZOaWgQuBH8y9q14wDbim_xehO5D58w3bh27WQ8TMkSRsZ0EjkAfrNrIuE2kUKQxQ4FH8JNOC_hkdBhFzPhd2VLYiTq7oKJpOIroTmz2MRth4h5AhrG5oNimZXq2ycQn_kEZhoyhsosbFSQ6HbPE0zN0Gkdr9CGXFHUjCEAOnhLMVAOl5EyN1ocCSgRPK0Lk8r8Q7p7xkNyut3v3bOfyDzT4r73_ldJ1KDuXKzWb0z1PHcfHg",
+        "expirationTime": 1583491728884
+    },
+    "redirectEventId": null
+}

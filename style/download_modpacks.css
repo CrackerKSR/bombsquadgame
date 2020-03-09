@@ -1,0 +1,13 @@
+/* Modpack page */
+
+.jrmp .img{
+    background-image: url("https://i.ibb.co/y58VD0s/image.png");
+    transform: scale(1.5) ;
+    filter: blur(6px) contrast(50%) brightness(40%) saturate(2);
+  }
+  .bombdash .img{
+    background-image: url("https://i.ibb.co/JjxDjwy/image.png");
+    transform: scale(1.5) ;
+    filter: blur(2px) contrast(50%) brightness(60%) saturate(2);
+  }
+  

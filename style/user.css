@@ -1,0 +1,15 @@
+.signIn_google{
+    background-color:#222222;
+    color: rgb(147, 153, 153);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 12px;
+    margin: 12px;
+    cursor: pointer;
+}
+.signIn_google:hover{
+   color: aliceblue;
+    
+}

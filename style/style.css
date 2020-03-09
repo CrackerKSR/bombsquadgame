@@ -1,0 +1,182 @@
+  * {
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  box-sizing: border-box;
+  color: white;
+  }
+
+
+/* header */
+header {
+  overflow: hidden;
+  background: #222;
+  /*position: absolute;  optional A*/
+  /*right: 0;      optional A*/
+  /*top: 0;            optional A*/   
+  /*left: 0;       optional A*/ 
+  /* A* added to make sure that header stick to top but not fixed*/
+}
+
+header a, header label {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+header a:hover, header label:hover { color: #aaa; }
+
+header label {
+  float: right;
+  padding: 18px 20px;
+  cursor: pointer;
+}
+
+header label:after {
+  content: "\2261";
+  font-size: 1.8em;
+}
+
+.logo {
+  float: left;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+  
+nav {
+  float: right;
+  max-height: 0;
+  width: 100%;
+  -webkit-transition: max-height 0.3s; 
+     -moz-transition: max-height 0.3s;
+       -o-transition: max-height 0.3s;
+          transition: max-height 0.3s;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+   padding-bottom: 10px;
+}
+  
+nav li {
+  display: block;
+  text-align: center;
+}
+  
+nav a {
+  padding: 10px;
+  width: 100%;
+}
+
+#nav { display: none; }
+
+#nav:checked ~ nav {
+  max-height: 200px; /* This can be anything bigger than your nav height. The transition duration works with this */
+}
+
+@media only screen and (min-width: 700px) {
+  
+  header label { display: none; }
+  
+  nav {
+    width: auto;
+    max-height: none;
+  }
+  
+  nav ul {
+    padding: 0;
+    padding-right: 10px;
+  }
+  
+  nav li {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  header nav a {
+    display: inline-block;
+    padding: 20px 10px;
+    width: auto;
+  }
+  
+}
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* ends Header*/
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 4rem;  /*it will makw foorwe to be hidden in default layout but can be show if scrolled down*/
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+
+/*///////////////////////////////*/
+
+/* Footer */
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color:#222;
+  text-align: center;
+}
+/* end Footer */
+
+
+/* flex card ends */
+/*kanad video bg */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -3;
+}
+/*end kanad video b*/
+/*about page*/
+.bsfb{
+  color: white;
+  background-color: #303F9F;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-decoration:none;
+  opacity: 0.7; 
+}
+/*end about */
+main{
+  padding: 30px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+/* downlaod mod page */
+.card ul{
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.mods{
+  border: 2px solid grey;
+  margin: 0;
+  background-color:rgba(255, 255, 255,0.3);
+
+}
+.uploader{
+  padding: 0;
+  margin: 0;
+}

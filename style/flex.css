@@ -1,0 +1,116 @@
+/* /////////////////////// */
+
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    /* background-color: white; */
+    font-family: sans-serif
+  }
+  
+  .flex-container  .flex-item {
+    width: 200px;
+    height:200px;
+    margin: 18px;
+    padding: 0px;
+    line-height: 25px;  
+    list-style: none;
+    text-align: center;
+  }
+  .flex-container > .card-link{
+    text-decoration: none;
+
+    padding: 0;
+    margin: 0;
+  }
+  .flex-container h2,h3{
+    padding: 4px;
+    margin: 0;
+    font-size: medium;
+    text-transform: uppercase; 
+    opacity: 0.9;
+
+  }
+  .card-link{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* ///////////////////////*/
+  .card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background-color: #5D4037; */
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: aliceblue;
+  }
+  .card-header{
+    position: relative;
+    top: 0px;
+    height: 30%;
+    width: 100%;
+    padding-top: 8px;
+    margin: 0;;
+    font-size: large;
+  }
+  .card-middle{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    margin: 0;;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 6px;
+  text-transform: capitalize; 
+  opacity: 0.9;
+  }
+  .card-footer {
+    position: absolute;
+    height: 20%;
+    width: 100%;
+  }
+  .img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+  }
+  .bs .img{
+    background-image: url("https://i.ibb.co/MCFFKcg/bs-icon-3.png");
+    filter: blur(4px) contrast(70%) brightness(40%) saturate(2);
+    transform: scale(2.0) ;
+  }
+  .modpack .img{
+    background-image: url("https://i.ibb.co/w7HxK16/image.png");
+    transform: scale(1.3) ;
+    filter: blur(2px) contrast(70%) brightness(50%) saturate(2);
+  }
+.mod .img{
+  background-image: url("https://i.ibb.co/f1ssQB3/image.png");
+  transform: scale(1.0) ;
+  filter: blur(1px) contrast(70%) brightness(40%) saturate(2);
+}
+.learn .img{
+  background-image : url("https://i.ibb.co/C18359M/image.png");
+  filter: blur(1px) contrast(70%) brightness(50%) saturate(2);
+}
+.doc .img {
+  background-image: url("https://i.ibb.co/8M42xdD/image.png");
+  filter: blur(2px) contrast(70%) brightness(70%) saturate(2);
+  transform: scale(2.0);
+}
+.about .img{
+  background-image: url("https://i.ibb.co/C90gYv3/BS-icona.png");
+  filter: blur(3px) contrast(70%) brightness(50%) saturate(0);
+  transform: scale(1.2);
+}
+
+.bs, .modpack, .mod, .learn, .doc, .about{
+  text-shadow:  0 0 40px #fff,0 0 60px #fff, 0 0 70px #fff;
+}

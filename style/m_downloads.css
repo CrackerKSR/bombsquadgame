@@ -1,0 +1,10 @@
+.server .img{
+  background-image : url("https://i.ibb.co/dMzQL93/image.png");
+  filter: blur(1px) contrast(70%) brightness(50%) saturate(2);
+}
+.misc .img {
+  background-image: url("https://i.ibb.co/FXQmM8t/image.png");
+  filter: blur(2px) contrast(70%) brightness(70%) saturate(2);
+  transform: scale(2.0);
+}
+

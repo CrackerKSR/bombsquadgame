@@ -1,32 +1,37 @@
 <?php $title = 'Mods Doanload'; ?>
 <?php include 'inc/header.php' ?>
-<?php require 'fireinit.php'; ?>
+<?php include 'fireinit.php'; ?>
 
-<h2> COMING SOON !</h2>
-<h5> You can download and upload mods here </h5>
-<p>*this is sample mod card </p>
+<?php if(!is_null($newCard)) : ?>
 <div class="flex-container">
 <?php  foreach ($newCard as $key => $value) { ?>
-  <div class="flex-item">
+    <?php if ($value['flag'] == '1' ): ?>
+    <div class="flex-item">
     <div class="card mods">
-      <div class="img"> <img src="<?php echo (isset($value['imgFile'])? $value['imgFile'] :'https://i.ibb.co/C90gYv3/BS-icona.png') ; ?>"> </div>
+      <div class="img"> <img src="https://firebasestorage.googleapis.com/v0/b/xampp-ksr.appspot.com/o/images%2FBackground.png?alt=media&token=6fc58f2a-d2f4-4c2e-86c9-45ee900c418f"> </div>
       <div class="card-header">
-        <h2> <?php echo (isset($value['modName'])? $value['modName'] :'untitled') ; ?> </h2>
+        <h2> <?php echo ( $value['modName'] ); ?> </h2>
       </div>
       <div class="card-middle">
         <ul style="list-style: none;">
+          <small>
           <li>Type: <?php echo ( $value['ffa']=='on')?"FFA":"" ; ?>  <?php echo ($value['team']=='on')?"team":"" ; ?> <?php echo ($value['team']=='on')?"TEAM":"" ; ?> </li>
-          <li><?php echo (isset($value['modderName'])?$value['modderName']:"unknown" ); ?> </li>
-          <li><small>Uploader: <?php echo (isset($value['displayName'])?$value['displayName']:"unknown" ); ?>  </small> </li>
+          <li>Modder: <?php echo (!empty($value['modderName'])?$value['modderName']:"unknown" ); ?> </li>
+          <li>Uploader: <?php echo (!empty($value['displayName'])?$value['displayName']:"unknown" ); ?>  </small> </li>
         </ul>
       </div>
-      <div class="card-footer">
-        <a download href="<?php echo $value['modFile'];  ?>"><h3>Download</h3></a>
+        <div class="card-footer">
+        <a style="text-decoration:none; color: white;"  href="<?php echo $value['modFile']; ?>" download="file"><h3>Download</h3></a>
+      
+        </div>
       </div>
     </div>
-  </div>
- <?php } ?> 
+  <?php endif; ?>
+<?php } ?> 
 
+<?php else: ?>
+  <h1> No Mods Available. </h1> 
+<?php endif; ?> 
 </div>
 
 <?php include 'inc/footer.php' ?>

@@ -1,55 +1,37 @@
 <?php include_once 'inc/header.php'; ?>
 
-<style type="text/css">
-	.upload,.imageupload{
-		display: none;
-	}
-	#formContainer{
-		width: 300px;
-		padding: 4px;
-		margin:10px;
-		position: absolute;
-	}
 
-	form{
-			width: 100%;
-	}
-	input[type=submit]{
-		width: 100%;
-		height: 40px;
-		border: none;
-	}
 
-</style>
-<div id="formContainer">
-		<form name="form1" action="sender.php" method="post">
-		
-		<fieldset>
-			<legend> ABout mode </legend>
-			<input type="text" name="modname" value="" placeholder="mode name"> <br>
-			<input type="text" name="moddername" value="" placeholder="modder name"> <br>
-		</fieldset>
-		<fieldset>
-			<legend> Mod type </legend>
-			<input type="checkbox" name="ffa"> <label> ffa</label>
-			<input type="checkbox" name="team"> <label for="">team</label>
-			<input type="checkbox" name="coop"> <label for="">coop</label>
-		</fieldset>
+<div class="main">
+  <div id="formContainer">
+    <form name="form1" action="sender.php" method="post">
+    
+    <fieldset>
+      <legend> ABout mode </legend>
+      <input type="text" name="modname" value="" placeholder="mode name"> <br>
+      <input type="text" name="moddername" value="" placeholder="modder name"> <br>
+    </fieldset>
+    <fieldset>
+      <legend> Mod type </legend>
+      <input type="checkbox" name="ffa"> <label> ffa</label>
+      <input type="checkbox" name="team"> <label for="">team</label>
+      <input type="checkbox" name="coop"> <label for="">coop</label>
+    </fieldset>
 
-		<fieldset>
-			<legend>mod file  </legend>
-			<input  type="radio" name="upload_mehode_mod" value="upload_mod_file" checked="checked"> <label for="">Upload File</label>
-			<input  type="radio" name="upload_mehode_mod" value="upload_mod_url">   <label for="">Paste mod URL</label>
+    <fieldset>
+      <legend>mod file  </legend>
+      <input  type="radio" name="upload_mehode_mod" value="upload_mod_file" checked="checked"> <label for="">Upload File</label>
+      <input  type="radio" name="upload_mehode_mod" value="upload_mod_url">   <label for="">Paste mod URL</label>
 
-			<div id="upload_mod_file" class="upload_mod" > 
-				<input type="file" name="modfile" id="modFILE" onchange="getfile()"  >
-				<progress value="0" id="uploaderBAR" max="100">0%</progress><br><br> 
-			</div>
-				<input type="url" name="modURL" value=""  id="modURL" placeholder="mod file url"> 
+      <div id="upload_mod_file" class="upload_mod" > 
+        <input type="file" name="modfile" id="modFILE" onchange="getfile()"  >
+        <progress value="0" id="uploaderBAR" max="100">0%</progress><br><br> 
+      </div>
+        <input type="url" name="modURL" value=""  id="modURL" placeholder="mod file url"> 
 
 
 
-		</fieldset>
+    </fieldset>
 
 <!-- <script type="text/javascript">
 function yesnoCheck() {
@@ -62,24 +44,26 @@ function yesnoCheck() {
 }
 
 </script> -->
-		<fieldset>
-			<legend>Image file </legend>
-			<input type="radio" name="upload_mehode_img" value="upload_img_file"  checked="checked"><label for="">Upload Image</label>
-			<input type="radio" name="upload_mehode_img" value="upload_img_url"><label for="">Paste mod URL</label>
+    <fieldset>
+      <legend>Image file </legend>
+      <input type="radio" name="upload_mehode_img" value="upload_img_file"  checked="checked"><label for="">Upload Image</label>
+      <input type="radio" name="upload_mehode_img" value="upload_img_url"><label for="">Paste mod URL</label>
 
-			<div id="upload_img_file" class="upload_img" > 
-				<input type="file" name="imgfile" id="imgFILE" onchange="getfile2()">
-			</div>
-			    <progress value="0" id="uploaderBAR2" max="100">0%</progress><br><br> 
-				<input type="url" name="imgURL" value="" placeholder="image file url"  id="imgURL">
+      <div id="upload_img_file" class="upload_img" > 
+        <input type="file" name="imgfile" id="imgFILE" onchange="getfile2()">
+      </div>
+          <progress value="0" id="uploaderBAR2" max="100">0%</progress><br><br> 
+        <input type="url" name="imgURL" value="" placeholder="image file url"  id="imgURL">
 
 
 
-		</fieldset>
+    </fieldset>
 
-		<input type="submit" name="submit" id="submit" value="UPLOAD">
-		<input type="reset" name="" value="reset">
-	</form>
+    <input type="submit" name="submit" id="submit" value="UPLOAD">
+    <input type="reset" name="" value="reset">
+    <input type="checkbox" name="flag">
+  </form>
+</div>
 </div>
 
 
@@ -146,6 +130,7 @@ function yesnoCheck() {
               // print the image url  
               document.getElementById('submit').removeAttribute('disabled'); 
               document.getElementById('modURL').value = downloadURL; 
+               
 
             }); 
           }); 

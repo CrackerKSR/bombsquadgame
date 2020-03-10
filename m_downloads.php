@@ -80,51 +80,7 @@
   </a>
 
 </div>
-<div class="main">
 
-  <div class="flex-container">
-
-    <a href="download_bs.php">
-      <div class="flex-item">
-        <div class="card">
-          <div class="home-title">
-            Original
-          </div>
-        </div>
-      </div>
-    </a>
-
-
-    <a href="download_modpacks.php">
-      <div class="flex-item">
-        <div class="card">
-          <div class="home-title">ModPacks</div>
-        </div>
-      </div>
-    </a>
-    <a href="download_mods.php">
-      <div class="flex-item">
-        <div class="card">
-          <div class="home-title">Mods</div>
-        </div>
-      </div>
-    </a>
-    <a href="download_servers.php">
-      <div class="flex-item">
-        <div class="card">
-          <div class="home-title">Server</div>
-        </div>
-      </div>
-    </a>
-    <a href="download_misc.php">
-      <div class="flex-item">
-        <div class="card">
-          <div class="home-title">Misc</div>
-        </div>
-      </div>
-    </a>
-
-  </div>
 
 
 

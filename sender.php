@@ -15,7 +15,7 @@ var team 		=	"<?php echo( isset($_POST['team']) ? $_POST['team'] : 'off' ); ?>";
 var coop 		=	"<?php echo( isset($_POST['coop']) ? $_POST['coop'] : 'off' ); ?>";
 
 var modFile 	=	"<?php echo( $_POST['modURL'] ); ?>";
-var imgFile 	=	"<?php echo( isset($_POST['imgURL']) ? $_POST['imgURL'] : 'https://i.ibb.co/C90gYv3/BS-icona.png' ); ?>";
+var modPhoto 	=	"<?php echo( isset($_POST['imgURL']) ? $_POST['imgURL'] : 'https://i.ibb.co/C90gYv3/BS-icona.png' ); ?>";
 
 
 var displayName 	=	"<?php echo( $_SESSION['name'] ); ?>";
@@ -28,20 +28,20 @@ console.log("assigned");
 // console.log(x);
   // A post entry.
   var uploadMod = {
-    modNmae: modName,
-    modderName: modderName,
-    modFile:modFile,
-    imgFile:imgFile,
-    ffa: ffa,
-    team: team,
-    coop: coop,
-    displayName: displayName,
-    userPhoto: userPhoto,
-    userMail:userMail,
-    uid: uid,
-    date: d 
-
-  };
+      modName: modName,
+      modderName: modderName,
+      modFile:modFile,
+      modPhoto:modPhoto,
+      ffa: ffa,
+      team: team,
+      coop: coop,
+      displayName: displayName,
+      userPhoto: userPhoto,
+      userMail:userMail,
+      uid: uid,
+      date: d,
+      flag:1
+    };
 
   // Get a key for a new Post.
   var newPostKey = firebase.database().ref().child('mods').push().key;
@@ -53,9 +53,9 @@ console.log("assigned");
 
   var x = firebase.database().ref().update(updates);
   console.log(x);
-  setTimeout (delay,2000);
+  setTimeout (delay,5000);
   function delay(){
-  	window.location = 'https://localhost/struct/m_user.php';
+  	window.location = 'm_user.php';
   }
   
 </script>

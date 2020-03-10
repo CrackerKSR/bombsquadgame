@@ -17,8 +17,8 @@ var coop 		=	"<?php echo( isset($_POST['coop']) ? $_POST['coop'] : 'off' ); ?>";
 var modFile 	=	"<?php echo( $_POST['modURL'] ); ?>";
 var modPhoto 	=	"<?php echo( isset($_POST['imgURL']) ? $_POST['imgURL'] : 'https://i.ibb.co/C90gYv3/BS-icona.png' ); ?>";
 
-
-var displayName 	=	"<?php echo( $_SESSION['name'] ); ?>";
+var uploaderName 	=	"<?php echo( $_SESSION['uploadername'] ); ?>";
+var displayName   = "<?php echo( $_SESSION['name'] ); ?>";
 var uid 			=	"<?php echo( $_SESSION['uid'] ); ?>";
 var userPhoto 		=	"<?php echo( $_SESSION['dp'] ); ?>";
 var userMail 		=	"<?php echo( $_SESSION['email'] ); ?>";
@@ -35,6 +35,7 @@ console.log("assigned");
       ffa: ffa,
       team: team,
       coop: coop,
+      uploaderName:uploaderName,
       displayName: displayName,
       userPhoto: userPhoto,
       userMail:userMail,

@@ -3,13 +3,18 @@
 
 
 <div class="main">
+<small><small>  <p> * UI designing is not done yet. its initial phase. with less validation. If you have any suggestion feel free to contact us 
+  <strong><a href="https://www.facebook.com/groups/bsglobal" style="text-decoration: none; color: white;" target="_blank"> BombSquad Game [Global] </a> or email : elitebombsquaders@gmail.com</strong>
+  </p></small></small>
+  <p>Fill all detail about mod along with mod file and image file for mod. uploaded mod will be shown in mods download page but later I will add filter </p>
   <div id="formContainer">
     <form name="form1" action="sender.php" method="post">
     
     <fieldset>
-      <legend> ABout mode </legend>
-      <input type="text" name="modname" value="" placeholder="mode name"> <br>
-      <input type="text" name="moddername" value="" placeholder="modder name"> <br>
+      <legend> About mode </legend>
+      <input type="text" name="modname" value="" placeholder="Mode name"> <br>
+      <input type="text" name="moddername" value="" placeholder="Modder name"> <br>
+      <input type="text" name="uploadername" value="" placeholder="Your Name"> <br>
     </fieldset>
     <fieldset>
       <legend> Mod type </legend>
@@ -19,14 +24,14 @@
     </fieldset>
 
     <fieldset>
-      <legend>mod file  </legend>
+      <legend> Mod file  </legend>
       <input  type="radio" name="upload_mehode_mod" value="upload_mod_file" checked="checked"> <label for="">Upload File</label>
       <input  type="radio" name="upload_mehode_mod" value="upload_mod_url">   <label for="">Paste mod URL</label>
 
       <div id="upload_mod_file" class="upload_mod" > 
         <input type="file" name="modfile" id="modFILE" onchange="getfile()"  >
-        <progress value="0" id="uploaderBAR" max="100">0%</progress><br><br> 
       </div>
+        <progress value="0" id="uploaderBAR" max="100">0%</progress><br><br> 
         <input type="url" name="modURL" value=""  id="modURL" placeholder="mod file url"> 
 
 
@@ -54,14 +59,15 @@ function yesnoCheck() {
       </div>
           <progress value="0" id="uploaderBAR2" max="100">0%</progress><br><br> 
         <input type="url" name="imgURL" value="" placeholder="image file url"  id="imgURL">
-
+      
 
 
     </fieldset>
 
-    <input type="submit" name="submit" id="submit" value="UPLOAD">
-    <input type="reset" name="" value="reset">
-    <input type="checkbox" name="flag">
+<fieldset>
+      <input type="submit" name="submit" id="submit" value="UPLOAD">
+    <input type="reset" name="" value="RESET">
+</fieldset>
   </form>
 </div>
 </div>

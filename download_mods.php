@@ -3,7 +3,8 @@
 <?php include 'fireinit.php'; ?>
 <?php include 'inc/fromGit.php'; ?>
 
-
+<p> Right click and save link as</p>
+<p> touch and hold and save link as</p>
 <p> User Uploaded Mods</p>
 <?php if(!is_null($newCard)) : ?>
 <div class="flex-container">
@@ -70,14 +71,14 @@
 <script>
   
   $("div.btn").click(function(event) {
-    // event.preventDefault(); 
+    event.preventDefault(); 
     var file = document.getElementById('file').innerHTML;
     var link = document.getElementById('link').innerHTML;
 
       request = $.ajax({
            url: "xyz.php",
            type: "post",
-           data: {'file':file,'link':link} 
+           data: {'file1':file,'link1':link} 
        });
       request.done(function (response, textStatus, jqXHR){
           console.log(response);

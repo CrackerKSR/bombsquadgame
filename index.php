@@ -1,9 +1,7 @@
 <?php $title = 'THE BOMBSQUAD GAME '; ?>
 
 <?php include 'inc/header.php' ?>
-<form action="xyz.php" method="post">
-  <input type="submit" name="submit" value="submit">
-</form>
+
 <div class="flex-container">
 
   <a href="download_bs.php" class="card-link">

@@ -1,10 +1,10 @@
 <?php
 
-$name= $_POST['file'];
-// $link= $_POST['link'][0];
+// $name= $_POST['file1'];
+// $link = strval($_POST['link1']);
 // echo "$name";
-echo($_POST['link']);
-	header('Content-type: application/pdf');
-	header('Content-Disposition: attachment; filename=name');
-	readfile($_POST['link']);
+// echo "$link";
+// 	header('Content-type: application/pdf');
+// 	header('Content-Disposition: attachment; filename='.$name);
+// 	readfile("$link");
 ?>

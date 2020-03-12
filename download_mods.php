@@ -3,6 +3,7 @@
 <?php include 'fireinit.php'; ?>
 <?php include 'inc/fromGit.php'; ?>
 
+
 <p> User Uploaded Mods</p>
 <?php if(!is_null($newCard)) : ?>
 <div class="flex-container">
@@ -44,7 +45,7 @@
     <div class="card mods">
       <div class="img"> <img src="https://firebasestorage.googleapis.com/v0/b/xampp-ksr.appspot.com/o/images%2FBackground.png?alt=media&token=6fc58f2a-d2f4-4c2e-86c9-45ee900c418f"> </div>
       <div class="card-header">
-        <h2> <?php echo ( $fileName[$key] ); ?> </h2>
+        <h2 id="modname"> <?php echo ( $fileName[$key] ); ?> </h2>
       </div>
       <div class="card-middle">
         <ul style="list-style: none;">
@@ -56,11 +57,33 @@
         </ul>
       </div>
         <div class="card-footer">
-        <a style="text-decoration:none; color: white;"  href="<?php echo $value;?>" download="file"><h3>Download</h3></a>
-      
+  
+        <a hidden  class="down" style="text-decoration:none; color: white;"  href="<?php echo $value; ?>" download="file"><h3>Download</h3></a>
+        <div class="btn">
+          <p id="file" > <?php echo $fileName[$key]; ?></p>
+          <p id="link" > <?php echo $value; ?> </p>
+        </div>
         </div>
       </div>
     </div>
 <?php } ?> 
+<script>
+  
+  $("div.btn").click(function(event) {
+    // event.preventDefault(); 
+    var file = document.getElementById('file').innerHTML;
+    var link = document.getElementById('link').innerHTML;
 
+      request = $.ajax({
+           url: "xyz.php",
+           type: "post",
+           data: {'file':file,'link':link} 
+       });
+      request.done(function (response, textStatus, jqXHR){
+          console.log(response);
+        
+       });
+
+});
+</script>
 <?php include 'inc/footer.php' ?>

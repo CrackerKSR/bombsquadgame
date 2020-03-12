@@ -3,8 +3,7 @@
 <?php include 'fireinit.php'; ?>
 <?php include 'inc/fromGit.php'; ?>
 
-<p> Right click and save link as</p>
-<p> touch and hold and save link as</p>
+<p>for pc- Right click and 'save link as'. for mobile- touch and hold and save link as</p>
 <p> User Uploaded Mods</p>
 <?php if(!is_null($newCard)) : ?>
 <div class="flex-container">

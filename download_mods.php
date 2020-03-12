@@ -59,16 +59,13 @@
       </div>
         <div class="card-footer">
   
-        <a hidden  class="down" style="text-decoration:none; color: white;"  href="<?php echo $value; ?>" download="file"><h3>Download</h3></a>
-        <div class="btn">
-          <p id="file" > <?php echo $fileName[$key]; ?></p>
-          <p id="link" > <?php echo $value; ?> </p>
-        </div>
+        <a hidden  class="down" style="text-decoration:none; color: white;"  href="<?php echo $value; ?>" download="<?php echo $fileName[$key].'py';  ?>"><h3>Download</h3></a>
         </div>
       </div>
     </div>
 <?php } ?> 
-<script>
+<!-- <script>
+
   
   $("div.btn").click(function(event) {
     event.preventDefault(); 
@@ -86,5 +83,5 @@
        });
 
 });
-</script>
+</script> -->
 <?php include 'inc/footer.php' ?>

@@ -1,7 +1,42 @@
 <?php $title = 'THE BOMBSQUAD GAME '; ?>
 
 <?php include 'inc/header.php' ?>
+<center> 
+<cite>Something big is coming</cite>
+<em>"After years of work, it’s finally time to get this ball rolling… 🙂" -Eric Froemling (BombSquad Game Developer) </em>
+<h1 id="demo"></h1>
+</center>
 
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Apr 3, 2020 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "days " + hours + " hours "
+  + minutes + " minutes " + seconds + " seconds ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 <div class="flex-container">
 
   <a href="download_bs.php" class="card-link">

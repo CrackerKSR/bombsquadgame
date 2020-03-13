@@ -1,4 +1,6 @@
+
 </main>
+
 <!-- //////////// Start of Footer /////////// -->
 <footer>
     <div class="footer">
@@ -7,7 +9,6 @@
     </div>
 </footer>
 <!-- //////////// Start of Footer /////////// -->
-
 </body>
 
 </html>

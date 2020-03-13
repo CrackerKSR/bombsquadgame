@@ -16,5 +16,7 @@
 Email : <a style="color: cyan; " href="mailto:elitebombsquaders@gmail.com"> elitebombsquaders@gmail.com </a> <br>
 Facebook : <a style="color: cyan; " href="https://www.facebook.com/Eric-Froemlings-Fans-1754300994609405/?eid=ARCrlh83fvEQKQnztnRwE83mCVgxRTaQPoq-pTVrar8nYauJ9Z6PZ-gxhDJ0aI08HvS9udBguaM6Pwzd">Eric Froemling's Fans </a> 
 </p>
+<div class="fb-like" data-href="https://www.facebook.com/Epic-BombSquader-1754300994609405/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+        <div class="fb-save" data-uri="https://bombsquadgame.herokuapp.com/" data-size="small"></div>
 
 <?php include 'inc/footer.php' ?>

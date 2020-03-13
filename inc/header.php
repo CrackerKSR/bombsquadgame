@@ -69,6 +69,18 @@
 </head>
 
 <body style="background-color: black;">
+  <!-- facebook save button --> 
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=636043716811253&autoLogAppEvents=1"></script>
+<!-- facebook join group button -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=2382453241989183&autoLogAppEvents=1"></script>
+<!-- facebook plugin for page lik -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=2382453241989183&autoLogAppEvents=1"></script>
+<!-- fb comments -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=2382453241989183&autoLogAppEvents=1"></script>
 <!--   <video autoplay muted loop id="myVideo">
     <source src="https://bselite.000webhostapp.com/fire.webm" type="video/mp4" poster="https://i.pinimg.com/originals/10/5b/18/105b18b8db617d4c02aa417cadbdae57.jpg">
   </video> -->
@@ -99,5 +111,6 @@
     </nav>
   </header>
   <!-- //////////// End of Header /////////// -->
+
   <main>
 

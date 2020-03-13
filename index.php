@@ -133,4 +133,5 @@ var x = setInterval(function() {
 </div>
 
 
+<div class="fb-comments" data-href="https://www.facebook.com/Epic-BombSquader-1754300994609405/" data-width="" data-numposts="5" colorscheme='dark'></div>
 <?php include 'inc/footer.php' ?>

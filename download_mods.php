@@ -3,7 +3,7 @@
 <?php include 'fireinit.php'; ?>
 <?php include 'inc/fromGit.php'; ?>
 
-<p>for pc- Right click and 'save link as'. for mobile- touch and hold and save link as</p>
+
 <p> User Uploaded Mods</p>
 <?php if(!is_null($newCard)) : ?>
 <div class="flex-container">
@@ -24,7 +24,12 @@
         </ul>
       </div>
         <div class="card-footer">
-        <a style="text-decoration:none; color: white;"  href="<?php echo $value['modFile']; ?>" download="file"><h3>Download</h3></a>
+          <form action="xyz.php" method="post" name="byUser">
+              <input hidden type="text" name="fname" value="<?php echo $value['modName'].'.py' ; ?>" >
+              <input hidden type="text" name="flink" value="<?php echo $value['modFile'] ; ?>">
+              <input type="submit" name="" value="Download">
+          </form>
+<!--         <a style="text-decoration:none; color: white;"  href="<?php echo $value['modFile']; ?>" download="file"><h3>Download</h3></a> -->
       
         </div>
       </div>
@@ -36,7 +41,11 @@
   <h1> No Mods Available. </h1> 
 <?php endif; ?> 
 </div>
+
+
 <hr>
+
+
 <p> Github Mods </p>
 
 <div class="flex-container">
@@ -57,37 +66,18 @@
         </ul>
       </div>
         <div class="card-footer">
-  
-          <a style="text-decoration:none; color: white;"  href="<?php echo $value; ?>" download  id="dow">
-            <h3>Download</h3>
-          </a>
+
+          <form action="xyz.php" method="post" name="byGit">
+            <input hidden type="text" name="flink" value="<?php echo ( $fileName[$key].'.py' ); ?>">
+            <input hidden type="text" name="fname" value="<?php echo $value; ?>">
+
+            <input type="submit" name="" value="Download">
+          </form>
+
+
         </div>
       </div>
     </div>
 <?php } ?> 
-<script>
-  document.getElementById("dow").addEventListener("click", function(event){
-  event.preventDefault()
-})
-</script>
-<!-- <script>
 
-  
-  $("div.btn").click(function(event) {
-    event.preventDefault(); 
-    var file = document.getElementById('file').innerHTML;
-    var link = document.getElementById('link').innerHTML;
-
-      request = $.ajax({
-           url: "xyz.php",
-           type: "post",
-           data: {'file1':file,'link1':link} 
-       });
-      request.done(function (response, textStatus, jqXHR){
-          console.log(response);
-        
-       });
-
-});
-</script> -->
 <?php include 'inc/footer.php' ?>

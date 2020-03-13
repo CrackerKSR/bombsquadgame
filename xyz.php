@@ -1,10 +1,15 @@
 <?php
 
-// $name= $_POST['file1'];
-// $link = strval($_POST['link1']);
-// echo "$name";
-// echo "$link";
-// 	header('Content-type: application/pdf');
-// 	header('Content-Disposition: attachment; filename='.$name);
-// 	readfile("$link");
+// get file name 
+$fname = $_POST['fname']; 
+// get download link
+$flink = $_POST['flink'];
+
+	// set file type i.e. PY
+	header('Content-type: application/py');
+	// set file name
+	header('Content-Disposition: attachment; filename='.$fname);
+	// finally read // this line will actually download the file 
+	readfile("$flink");
+
 ?>

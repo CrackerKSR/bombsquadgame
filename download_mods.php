@@ -58,11 +58,18 @@
       </div>
         <div class="card-footer">
   
-        <a hidden  class="down" style="text-decoration:none; color: white;"  href="<?php echo $value; ?>" download="<?php echo $fileName[$key].'py';  ?>"><h3>Download</h3></a>
+          <a style="text-decoration:none; color: white;"  href="<?php echo $value; ?>" download  id="dow">
+            <h3>Download</h3>
+          </a>
         </div>
       </div>
     </div>
 <?php } ?> 
+<script>
+  document.getElementById("dow").addEventListener("click", function(event){
+  event.preventDefault()
+})
+</script>
 <!-- <script>
 
   

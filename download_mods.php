@@ -68,8 +68,8 @@
         <div class="card-footer">
 
           <form action="xyz.php" method="post" name="byGit">
-            <input hidden type="text" name="flink" value="<?php echo ( $fileName[$key].'.py' ); ?>">
-            <input hidden type="text" name="fname" value="<?php echo $value; ?>">
+            <input hidden type="text" name="flink" value="<?php echo $value; ?>">
+            <input hidden type="text" name="fname" value="<?php echo ( $fileName[$key].'.py' ); ?>">
 
             <input type="submit" name="" value="Download">
           </form>

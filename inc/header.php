@@ -5,6 +5,13 @@
 <?php include_once 'inc/session.php' ?>
   <title> <?php echo $title; ?> </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:site_name" content="BombSquade Game"/>
+  <meta property="og:title" content="BombSquaders World"/>
+<meta property="og:description" content="The only place to download all bombsquad related contents."/>
+
+<meta property="og:url" content="http://bombsquadgame.herokuapp.com/">
+<meta property="og:type" content="blog"/>
+
 
   <meta property="og:image" content="https://i.ibb.co/FBB59db/Pics-Art-02-27-09-37-59.png" />
   <link rel="icon" type="text/css" href="https://files.ballistica.net/bombsquad/promo/BombSquadLogo24.png">

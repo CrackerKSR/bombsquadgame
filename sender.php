@@ -1,5 +1,26 @@
 <?php include_once 'inc/header.php'; ?>
+<style>
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
 
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
 
 <?php if(isset($_POST['submit'])) : ?>
 
@@ -17,7 +38,7 @@ var coop 		=	"<?php echo( isset($_POST['coop']) ? $_POST['coop'] : 'off' ); ?>";
 var modFile 	=	"<?php echo( $_POST['modURL'] ); ?>";
 var modPhoto 	=	"<?php echo( isset($_POST['imgURL']) ? $_POST['imgURL'] : 'https://i.ibb.co/C90gYv3/BS-icona.png' ); ?>";
 
-var uploaderName 	=	"<?php echo( $_SESSION['uploadername'] ); ?>";
+var uploaderName  = "<?php echo( $_POST['uploadername'] ); ?>";
 var displayName   = "<?php echo( $_SESSION['name'] ); ?>";
 var uid 			=	"<?php echo( $_SESSION['uid'] ); ?>";
 var userPhoto 		=	"<?php echo( $_SESSION['dp'] ); ?>";
@@ -54,12 +75,16 @@ console.log("assigned");
 
   var x = firebase.database().ref().update(updates);
   console.log(x);
+  document.write("<h1> Please Waite...! </h1>");
+  document.write("<div class='loader'> </div>");
+
   setTimeout (delay,5000);
   function delay(){
   	window.location = 'm_user.php';
+
   }
   
-</script>
+</script> 
 
 <?php endif; ?>
 

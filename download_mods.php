@@ -11,7 +11,7 @@
     <?php if ($value['flag'] == '1' ): ?>
     <div class="flex-item">
     <div class="card mods">
-      <div class="img"> <img src="https://firebasestorage.googleapis.com/v0/b/xampp-ksr.appspot.com/o/images%2FBackground.png?alt=media&token=6fc58f2a-d2f4-4c2e-86c9-45ee900c418f"> </div>
+<!--       <div class="img"> <img src="https://firebasestorage.googleapis.com/v0/b/xampp-ksr.appspot.com/o/images%2FBackground.png?alt=media&token=6fc58f2a-d2f4-4c2e-86c9-45ee900c418f"> </div> -->
       <div class="card-header">
         <h2> <?php echo ( $value['modName'] ); ?> </h2>
       </div>
@@ -46,13 +46,14 @@
 <hr>
 
 
-<p> Github Mods </p>
+<p> Mods from Git Repo  </p><p style="font-size: 10px;">Mrmaxmeier/BombSquad-Community-Mod-Manager </p>
+ 
 
 <div class="flex-container">
 <?php  foreach ($fileLink as $key => $value) { ?>
     <div class="flex-item">
     <div class="card mods">
-      <div class="img"> <img src="https://firebasestorage.googleapis.com/v0/b/xampp-ksr.appspot.com/o/images%2FBackground.png?alt=media&token=6fc58f2a-d2f4-4c2e-86c9-45ee900c418f"> </div>
+<!--       <div class="img"> <img src="https://firebasestorage.googleapis.com/v0/b/xampp-ksr.appspot.com/o/images%2FBackground.png?alt=media&token=6fc58f2a-d2f4-4c2e-86c9-45ee900c418f"> </div> -->
       <div class="card-header">
         <h2 id="modname"> <?php echo ( $fileName[$key] ); ?> </h2>
       </div>

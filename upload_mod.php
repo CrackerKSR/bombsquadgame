@@ -32,7 +32,7 @@
         <input type="file" name="modfile" id="modFILE" onchange="getfile()"  >
       </div>
         <progress value="0" id="uploaderBAR" max="100">0%</progress><br><br> 
-        <input type="url" name="modURL" value=""  id="modURL" placeholder="mod file url"> 
+        <input hidden type="url" name="modURL" value=""  id="modURL" placeholder="mod file url"> 
 
 
 
@@ -58,13 +58,14 @@ function yesnoCheck() {
         <input type="file" name="imgfile" id="imgFILE" onchange="getfile2()">
       </div>
           <progress value="0" id="uploaderBAR2" max="100">0%</progress><br><br> 
-        <input type="url" name="imgURL" value="" placeholder="image file url"  id="imgURL">
+        <input hidden type="url" name="imgURL" value="" placeholder="image file url"  id="imgURL">
       
 
 
     </fieldset>
 
 <fieldset>
+
       <input type="submit" name="submit" id="submit" value="UPLOAD">
     <input type="reset" name="" value="RESET">
 </fieldset>
@@ -103,7 +104,7 @@ function yesnoCheck() {
           var name=fname.replace(/^.*[\\\/]/, ''); 
   
           // make ref to your firebase storage and select images folder 
-          var storageRef = firebase.storage().ref('/images/'+ name); 
+          var storageRef = firebase.storage().ref('/mods/'+ name); 
   
           // put file to firebase  
           var uploadTask = storageRef.put(selectedFile); 

@@ -6,7 +6,7 @@
   <title> <?php echo $title; ?> </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:site_name" content="BombSquade Game"/>
-  <meta property="og:title" content="BombSquaders World"/>
+  <meta property="og:title" content="BombSquade Game"/>
 <meta property="og:description" content="The only place to download all bombsquad related contents."/>
 
 <meta property="og:url" content="http://bombsquadgame.herokuapp.com/">

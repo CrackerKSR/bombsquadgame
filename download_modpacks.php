@@ -39,8 +39,8 @@
 
 
 </div>
-
-
+<p> This section is not completed yet. I need to explore all available modpacks and get their permission to add download link here. You can suggest me via email or post on facebook group Soon you can add modpacks here.</p>
+<p> Also registered users themself can add modpacks here  </p>
 
 
 

@@ -90,7 +90,7 @@
   </div>
 
 </div>
-
+<p> Click here for more downloads <a href='m_downloads.php'> ALL DOWNLOADS </a> </p>
 <!-- start main flex-container -->
 
 <!-- 

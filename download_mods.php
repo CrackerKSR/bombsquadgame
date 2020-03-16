@@ -3,7 +3,7 @@
 <?php include 'fireinit.php'; ?>
 <?php include 'inc/fromGit.php'; ?>
 
-
+* You can upload mods here. Just go to User menu and sign in.
 <p> User Uploaded Mods</p>
 <?php if(!is_null($newCard)) : ?>
 <div class="flex-container">
